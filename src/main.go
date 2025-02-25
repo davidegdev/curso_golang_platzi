@@ -3,8 +3,55 @@ package main
 import "fmt"
 
 func main() {
+
+	//---------------------------------------------------------------- 8TH CLASS
+	//-- Aritmetic Operations
+	//-- Add
+	x:=10
+	y:=40
+
+	result:= x + y
+	fmt.Println("Add Result:", result)
+
+	//-- Subtract
+	result = y - x
+	fmt.Println("Subtract Result:", result)
+
+	//-- Multiply
+	result = x * y
+	fmt.Println("Multiply Result:", result)
+
+	//-- Divide
+	result = y / x
+	fmt.Println("Divide Result:", result)
+
+	//-- Modulus
+	result = y % x
+	fmt.Println("Modulus Result:", result)
+
+	//-- Calculate Area of a rectangle
+	baseRect := 20
+	alturaRect := 10
+	areaRect := baseRect * alturaRect
+	fmt.Println("Area of rectangle: ", areaRect)
+
+	//-- Calculate Area of a circle
+	radio := 10
+	pi := 3.1416
+	areaCircle := pi * float64(radio * radio)
+	fmt.Println("Area of circle: ", areaCircle)
+
+	//-- Calculate Area of a Trapeze
+	baseBig := 10
+	baseSmall := 6
+	heightTrapeze := 4
+	areaTrapeze := ((baseBig + baseSmall) * heightTrapeze) / 2
+	fmt.Println("Area of trapeze: ", areaTrapeze)
+
+	//---------------------------------------------------------------------------------------------- FIRSTS CLASSES
+
 	//-- Declaring a constant
-	const pi float64 = 3.14
+	const pi1 float64 = 3.14
 	const pi2 = 3.1415
 
 	//-- Declaring variables
