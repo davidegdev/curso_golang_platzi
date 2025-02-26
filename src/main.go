@@ -4,7 +4,41 @@ import "fmt"
 
 func main() {
 
-	//---------------------------------------------------------------- 8TH CLASS
+	//---------------------------------------------------------------------------------------------- FIRSTS CLASSES
+
+	//-- Declaring a constant
+	const pi1 float64 = 3.14
+	const pi2 = 3.1415
+
+	//-- Declaring variables
+	base := 12 				//-- := is used to declare and assign a value to a variable
+	var altura int = 14		//-- declare variable with type and instance
+	var area int			//-- declare variable with type with zero value
+
+	fmt.Println("Hello world")
+	fmt.Println("Pi1: ", pi1)
+	fmt.Println("Pi2: ", pi2)
+	fmt.Println("Base: ", base)
+	fmt.Println("Altura: ", altura)
+	fmt.Println("Area: ", area)
+
+	//-- Zero value
+	var a int
+	var b float64
+	var c string
+	var d bool
+
+	fmt.Println("a: ", a)
+	fmt.Println("b: ", b)
+	fmt.Println("c: ", c)
+	fmt.Println("d: ", d)
+
+	//-- Area of square
+	const baseSquare int = 10
+	areaSquare := baseSquare * baseSquare
+	fmt.Println("Area of square: ", areaSquare)
+
+	//---------------------------------------------------------------- CLASS #8 - Operadores aritméticos
 	//-- Aritmetic Operations
 	//-- Add
 	x:=10
@@ -48,38 +82,29 @@ func main() {
 	areaTrapeze := ((baseBig + baseSmall) * heightTrapeze) / 2
 	fmt.Println("Area of trapeze: ", areaTrapeze)
 
-	//---------------------------------------------------------------------------------------------- FIRSTS CLASSES
+	//---------------------------------------------------------------- CLASS #10 - Paquete fmt: algo más que imprimir en consola
+	helloMessage := "Hello"
+	worldMessage := "world"
+	fmt.Println(helloMessage, worldMessage)
+	
+	//-- 														Printf
+	//-- %s string
+	//-- %d int
+	//-- %f float
+	//-- %v any type
+	//-- %T type of variable
+	name := "Platzi"
+	courses := 500
+	fmt.Printf("%s has more than %d courses\n", name, courses)
+	fmt.Printf("%v has more than %v courses\n", name, courses)
 
-	//-- Declaring a constant
-	const pi1 float64 = 3.14
-	const pi2 = 3.1415
+	//--														Sprintf
 
-	//-- Declaring variables
-	base := 12 				//-- := is used to declare and assign a value to a variable
-	var altura int = 14		//-- declare variable with type and instance
-	var area int			//-- declare variable with type with zero value
+	message := fmt.Sprintf("%s has more than %d courses", name, courses)
+	fmt.Println(message)		
 
-	fmt.Println("Hello world")
-	fmt.Println("Pi: ", pi)
-	fmt.Println("Pi2: ", pi2)
-	fmt.Println("Base: ", base)
-	fmt.Println("Altura: ", altura)
-	fmt.Println("Area: ", area)
-
-	//-- Zero value
-	var a int
-	var b float64
-	var c string
-	var d bool
-
-	fmt.Println("a: ", a)
-	fmt.Println("b: ", b)
-	fmt.Println("c: ", c)
-	fmt.Println("d: ", d)
-
-	//-- Area of square
-	const baseSquare int = 10
-	areaSquare := baseSquare * baseSquare
-	fmt.Println("Area of square: ", areaSquare)
+	//--														Type of variables
+	fmt.Printf("%T\n", helloMessage)		
+	fmt.Printf("%T\n", courses)	
 
 }
