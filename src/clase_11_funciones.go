@@ -18,6 +18,7 @@ func doubleReturn(a int) (b, c int){
 	return a, a*2
 }
 
+
 func main() {
 	normalFunction("Hola mundo")
 	tripleArgument(1, 2, "Hola")
