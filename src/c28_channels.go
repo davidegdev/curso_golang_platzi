@@ -9,7 +9,7 @@ func say(text string, c chan <- string) {
 }
 
 func main() {
-	c := make(chan string, 1) // Creacion de un channel (tipo de dato, cantidad de datos simultaneos a manejar)
+	c := make(chan string, 1) // Creacion de un channel (tipo de dato, y cantidad de datos simultaneos a manejar)
 
 	fmt.Println("Hello")
 
