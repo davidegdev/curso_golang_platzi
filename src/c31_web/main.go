@@ -1,9 +1,18 @@
 package main
 
-func main(){
+import "github.com/labstack/echo"
 
+func main(){
+	// Instance echo
+	e := echo.New()
+
+	// Create a new route
+	e.GET("/", func(c echo.Context) error {
+		return c.String(200, "Hello, World!")
+	})
+	e.Logger.Fatal(e.Start(":1323")) // Start the server
 }
 
-// COMANDOS
+// COMANDOS TERMINAL
 
-// go install -v github.com/labstack/echo/v4@latest or with flag -u if already installed
+// go get github.com/labstack/echo
