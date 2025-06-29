@@ -1,13 +1,11 @@
 package main
 
 import (
-	"fmt"
-
-	//"github.com/labstack/echo"
+	"github.com/labstack/echo"
 )
 
 func main(){
-	/*
+	
 	// Instance echo
 	e := echo.New()
 
@@ -16,8 +14,6 @@ func main(){
 		return c.String(200, "Hello, World!")
 	})
 	e.Logger.Fatal(e.Start(":1323")) // Start the server
-	*/
-	fmt.Println("Hello World!")
 }
 
 // COMANDOS TERMINAL
