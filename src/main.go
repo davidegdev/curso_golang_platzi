@@ -2,16 +2,15 @@ package main
 
 import (
 	"fmt"
-
 	//"github.com/labstack/echo"
 )
 
-func doubleReturn(a int) (c, d int) { return a, a * 2 };
+func doubleReturn(a int) (c, d int) { return a, a * 2 }
 
-func main(){
+func main() {
 
 	var num uint8 = 200
-	
+
 	// Instance echo
 	/*e := echo.New()
 
@@ -24,11 +23,11 @@ func main(){
 	fmt.Printf("2, %T", 2)
 	fmt.Println()
 	fmt.Println("num: ", num)
-	x,y := doubleReturn(2)
+	x, y := doubleReturn(2)
 
 	fmt.Println("Valor de x:", x)
 	fmt.Println("Valor de y:", y)
-	
+
 }
 
 // COMANDOS TERMINAL
